@@ -23,9 +23,9 @@ hr {
 	margin: 15px;
 }
 .nav-links {
-	position: fixed;
+	position: absolute;
 	float: left;
-	right: 0px;
+	right: -50px;
 	top: 0px;
 	width: 33%;
 	z-index: 999;
