@@ -22,7 +22,11 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 	margin: 15px;
 	color: #777777;
 }
+li {
+	display: inline-block;
+}
 .nav-links {
+	list-style-type: none;
 	position: fixed;
 	clear: both;
 	top: 0px;
@@ -32,11 +36,11 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 }
 .navigation {
 	color: black;
-	top: 0px;
-	width: 100px;
-	height: 55px;
-	margin-top: 15px;
-	padding: 10px;
+	/top: 0px;
+	width: 33%;
+	/height: 55px;
+	/margin-top: 10px;
+	/padding: 10px;
 }
 .white-ribbon{
 	background-color: white;
@@ -106,7 +110,11 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 	width: 600px;
 	height: 20px;
 }
-.project_1, .project_2, .project_3, .project_4 {
+.dogtown-wrapper, .bananastand-wrapper, .avatar-wrapper, .insideout-wrapper {
+	position: relative;
+	display: inline-block;
+}
+.dogtown-tile, .bananastand-tile, .avatar-tile, .insideout-tile {
 	position: relative;
 	display: inline-block;
 	height: 275px;
@@ -114,16 +122,16 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 	margin: 10px 10px 10px 25px;
 	background-color: grey;
 }
-.project_1 {
+.dogtown-tile {
 	content:url(http://lorempixel.com/output/abstract-q-c-640-480-2.jpg);
 }
-.project_2 {
+.bananastand-tile {
 	content: url(http://lorempixel.com/output/abstract-q-c-640-480-6.jpg);
 }
-.project_3 {
+.avatar-tile {
 	content: url(http://lorempixel.com/output/abstract-q-c-640-480-4.jpg);
 }
-.project_4 {
+.insideout-tile {
 	content: url(http://lorempixel.com/output/abstract-q-c-640-480-1.jpg);
 }
 .footer-ribbon {
@@ -134,32 +142,18 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 	position: fixed;
 	z-index: 998;
 }
-.project_1_name, .project_2_name, .project_3_name, .project_4_name {
+
+.dogtown-name, .bananastand-name, .avatar-name, .insideout-name {
 	position: absolute;
 	width: 275px;
 	height: 35px;
 	color: white;
-	z-index: 998;
+	z-index: 997;
 	background-color: #4aaaa5;
 	margin-left: 25px;
 	text-align: center;
 	padding-top: 15px;
-}
-.project_1_name {
-	top: 350px;
-	clear: both;
-}
-.project_2_name {
-	top: 350px;
-	left: 316px;
-	clear: both;
-}
-.project_3_name {
-	top: 650px;
-}
-.project_4_name {
-	top: 650px;
-	left: 316px;
+	top: 200px;
 }
 .submit-button {
 	background-color: #4aaaa5;
@@ -173,9 +167,9 @@ p, .nav-links, .contact-form, .project_names, .submit-button {
 }
 .divider1, .divider2 {
 	border-left: 1px solid grey;
-	height: 22px;
-	position: absolute;
-	top: -1px;
+	height: 15px;
+	/position: absolute;
+	/top: 3px;
 }
 .divider1 {
 	right: 208px;
